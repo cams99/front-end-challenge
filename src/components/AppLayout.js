@@ -36,7 +36,7 @@ const AppLayout = ({ router }) => {
               height: '100%',
             }}
             alt={'Logo'}
-            src={'logo192.png'}
+            src={`${process.env.PUBLIC_URL}/logo192.png`}
           />
         </div>
         <Divider type={'horizontal'} />

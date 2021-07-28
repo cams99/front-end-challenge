@@ -2,7 +2,11 @@ import PropTypes from 'prop-types'
 
 const Avatar = ({ collapsed, userName }) => (
   <div className='user-icon'>
-    <img style={{ height: '100%' }} src='usuario.png' alt={'Usuario'} />
+    <img
+      style={{ height: '100%' }}
+      src={`${process.env.PUBLIC_URL}/usuario.png`}
+      alt={'Usuario'}
+    />
     <span
       style={
         collapsed
