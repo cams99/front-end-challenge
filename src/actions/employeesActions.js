@@ -40,7 +40,7 @@ export const addEmployee = data => async dispatch => {
   })
   try {
     const response = await axios.post(
-      'http://dummy.restapiexample.com/api/v1/create',
+      'https://dummy.restapiexample.com/api/v1/create',
       data,
       {
         headers: {
@@ -67,7 +67,7 @@ export const editEmployee = (id, data) => async dispatch => {
   })
   try {
     const response = await axios.put(
-      `http://dummy.restapiexample.com/api/v1/update/${id}`,
+      `https://dummy.restapiexample.com/api/v1/update/${id}`,
       data,
       {
         headers: {
@@ -94,7 +94,7 @@ export const deleteEmployee = id => async dispatch => {
   })
   try {
     const response = await axios.delete(
-      `http://dummy.restapiexample.com/api/v1/delete/${id}`
+      `https://dummy.restapiexample.com/api/v1/delete/${id}`
     )
     dispatch({
       type: EMPLOYEE_ACTIONS,
