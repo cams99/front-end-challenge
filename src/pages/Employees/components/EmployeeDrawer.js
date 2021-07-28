@@ -170,7 +170,7 @@ function EmployeesDrawer({
 
 EmployeesDrawer.propTypes = {
   edit: PropTypes.bool.isRequired,
-  editData: PropTypes.object.isRequired,
+  editData: PropTypes.object,
   visible: PropTypes.bool.isRequired,
   closable: PropTypes.func.isRequired,
   editEmployee: PropTypes.func.isRequired,

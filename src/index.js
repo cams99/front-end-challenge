@@ -12,12 +12,13 @@ import reducers from './reducers'
 
 const initialState = {}
 
-const composeEnhancers = compose(
-  applyMiddleware(reduxThunk),
-  window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__()
-)
+const composeEnhancers = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose
 
-const store = createStore(reducers, initialState, composeEnhancers)
+const store = createStore(
+  reducers,
+  initialState,
+  composeEnhancers(applyMiddleware(reduxThunk))
+)
 
 ReactDOM.render(
   <Provider store={store}>
