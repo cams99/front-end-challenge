@@ -1,0 +1,6 @@
+export const GET_EMPLOYEES = 'GET_EMPLOYEES'
+export const EMPLOYEE_ACTIONS = 'EMPLOYEE_ACTIONS'
+export const LOADING = 'LOADING'
+export const EMPLOYEE_LOADING = 'EMPLOYEE_LOADING'
+export const ERROR = 'ERROR'
+export const EMPLOYEE_ERROR = 'EMPLOYEE_ERROR'
